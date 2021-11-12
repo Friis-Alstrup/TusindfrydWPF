@@ -14,12 +14,12 @@
         <Label Content="Produktionstid:" HorizontalAlignment="Left" Margin="15,220,0,0" VerticalAlignment="Top"/>
         <Label Content="Halveringstid:" HorizontalAlignment="Left" Margin="15,260,0,0" VerticalAlignment="Top"/>
         <Label Content="Størrelse:" HorizontalAlignment="Left" Margin="15,300,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="NameField" HorizontalAlignment="Left" Margin="118,34,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="NameField_TextChanged"/>
-        <TextBox x:Name="PictureField" HorizontalAlignment="Left" Margin="118,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="PictureField_TextChanged"/>
+        <TextBox x:Name="NameField" HorizontalAlignment="Left" Margin="118,34,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="IsFilled"/>
+        <TextBox x:Name="PictureField" HorizontalAlignment="Left" Margin="118,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="IsFilled" LostFocus="PictureUpdate"/>
         <Image x:Name="PictureBox" HorizontalAlignment="Left" Height="100" Margin="118,102,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="ProductionTimeField" HorizontalAlignment="Left" Margin="118,220,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="ProductionTimeField_TextChanged"/>
-        <TextBox x:Name="HalfLifeField" HorizontalAlignment="Left" Margin="118,262,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="HalfLifeField_TextChanged"/>
-        <TextBox x:Name="SizeField" HorizontalAlignment="Left" Margin="118,302,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="SizeField_TextChanged"/>
+        <TextBox x:Name="ProductionTimeField" HorizontalAlignment="Left" Margin="118,220,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="IsFilled"/>
+        <TextBox x:Name="HalfLifeField" HorizontalAlignment="Left" Margin="118,262,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="IsFilled"/>
+        <TextBox x:Name="SizeField" HorizontalAlignment="Left" Margin="118,302,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" Height="22" TextChanged="IsFilled"/>
         <Button x:Name="CreateFlower" Content="Opret" HorizontalAlignment="Left" Margin="206,376,0,0" VerticalAlignment="Top" Height="28" Width="98" Click="CreateFlower_Click"/>
         <Button x:Name="CloseButton" Content="Fortryd" HorizontalAlignment="Left" Margin="312,376,0,0" VerticalAlignment="Top" Height="28" Width="98" Click="CloseButton_Click"/>
 

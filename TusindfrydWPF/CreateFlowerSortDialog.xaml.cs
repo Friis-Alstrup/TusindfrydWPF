@@ -58,26 +58,21 @@ namespace TusindfrydWPF
             get { return int.Parse(SizeField.Text);  }
         }
 
-        private void NameField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-        private void PictureField_TextChanged(object sender, TextChangedEventArgs e)
+        private void PictureUpdate(object sender, RoutedEventArgs e)
         {
             ImageSourceConverter converter = new ImageSourceConverter();
             PictureBox.Source = (ImageSource)converter.ConvertFromString(PictureField.Text);
         }
-        private void ProductionTimeField_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void IsFilled(object sender, TextChangedEventArgs e)
         {
-            
-        }
-        private void HalfLifeField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-        private void SizeField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            CreateFlower.IsEnabled = true;
+            if (NameField.Text != string.Empty && PictureField.Text != string.Empty && ProductionTimeField.Text != string.Empty && HalfLifeField.Text != string.Empty && SizeField.Text != string.Empty)
+            {
+                CreateFlower.IsEnabled = true;
+            } else
+            {
+                CreateFlower.IsEnabled = false;
+            }
         }
     }
 }
